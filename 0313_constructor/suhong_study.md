@@ -133,5 +133,3 @@ public class ArrayListSuhong<T> {
 
  [ArrayList의 동작 방식](https://stackoverflow.com/questions/3467965/how-does-arraylist-work#:~:text=ArrayList%20uses%20an%20Array%20of,parameter%20while%20initializing%20the%20ArrayList.)
 > `ArrayList`의 동작 방식에 대한 설명이다. 내부적으로 일반적인 배열을 사용하며 배열이 꽉차면 더 큰 배열을 새로 만들어 사용한다고 한다.
-
-git push 예시
