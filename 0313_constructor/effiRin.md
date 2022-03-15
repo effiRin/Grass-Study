@@ -17,17 +17,17 @@
 
 - **비교**
 
+```java
 public SampleObj {         
 
 // 클래스만 선언하면 기본생성자가 만들어짐
-
 // 역컴파일러 : public SampleObj()   → 클래스에 쓰지 않아도 저절로 생긴 기본 생성자
 
-public SampleObj(**int value**){         
+public SampleObj(int value){         
 
 // 기존의 SampleObj 클래스에 사용자 정의 생성자를 추가함
-
 // 역컴파일러 : public SampleObj(int)    → 사용자 정의 생성자
+```
 
 # 3. 생성자로 안전한 설계하기
 
