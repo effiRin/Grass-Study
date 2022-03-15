@@ -107,11 +107,11 @@ public class StoreLoader {
         }//end for
 }
 
-//        stores[0] = new StoreDTO(1,"우래옥",37.111,127.111);
-//        stores[1] = new StoreDTO(2,"AAA",37.111,127.111);
-//        stores[2] = new StoreDTO(3,"BBB",37.111,127.111);
-//        stores[3] = new StoreDTO(4,"CCC",37.111,127.111);
-//        stores[4] = new StoreDTO(5,"DDD",37.111,127.111);
+//        stores[0] = new StoreDTO(1,"AAA",37.111,127.111);
+//        stores[1] = new StoreDTO(2,"BBB",37.111,127.111);
+//        stores[2] = new StoreDTO(3,"CCC",37.111,127.111);
+//        stores[3] = new StoreDTO(4,"DDD",37.111,127.111);
+//        stores[4] = new StoreDTO(5,"EEE",37.111,127.111);
 ```
 
 - s**torefile과 scanner는 왜 생성자 안의 변수로 선언했는가?**
