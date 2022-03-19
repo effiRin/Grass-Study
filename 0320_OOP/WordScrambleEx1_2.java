@@ -28,18 +28,18 @@ public class WordScrambleEx1_2 {
    	 List<Character> splitedWords = new ArrayList<Character>();
    	 
    	 for(char c : str.toCharArray()){
-   		 splitedWords.add(c);  			// List<Character>로 바꿔주기 위한?
+   		 splitedWords.add(c);  			// shuffle 사용을 위해 List<Character>로 바꿔주기 위한 for문
    		 }
    	 
    	 Collections.shuffle(splitedWords);   // 섞음
 
    	 StringBuilder builder = new StringBuilder();
    	 
-   	 for(char c : splitedWords) {
+   	 for(char c : splitedWords) {		// builder에 한 글자씩 더해주기
    		 builder.append(c);
    		 }
    	 
-   	 String shuffled = builder.toString();
+   	 String shuffled = builder.toString();		
    	 return shuffled;
 
     } 
