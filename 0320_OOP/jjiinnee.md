@@ -5,7 +5,8 @@
 
 추상클래스 키워드는 ‘abstract’ 
 
-abstract class player{          >> 추상클래스
+````java
+abstract class player{                 >> 추상클래스
 	abstract void play(int pos);   >> 추상 메서드
 }
 
@@ -13,16 +14,19 @@ Class AudioPlayer extends player{
 	void play(int pos){};     >> 추상메서드 구현
 	
 }
-
+````
 사실상 !!! 
 자손 클래스에서 오버라이딩하여 자신의 클래스에 맞게 구현할 수도 있지만 
 추상메서드로 선언하는 이유는 자손 클래스에서 추상메서드를 반드시 구현하도록 강요하기 위해서!!!
 만약 추상메서드로 정의되어 있지 않고 
 
+````java
 class player{
- void play(int pos){};
- void stop(){}
+  void play(int pos){};
+  void stop(){}
 }
+````
+
 이런식으로 정의되어 있다면, 자손 클래스에서 이 메서드들이 온전히 구현된것으로 인식하고 오버라이딩을 통해 
 자신의 클래스에 맞도록 구현하지 않을 수도 있다!
 
