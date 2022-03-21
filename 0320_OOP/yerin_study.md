@@ -191,3 +191,7 @@ mickey.countOfTail = 1;
 명심할 것은, 앞서 만든 참조 변수 mickey가 가리키는 객체와는 **전혀 다른 새로운 객체**라는 점이다.
 
 <img src="https://user-images.githubusercontent.com/101503543/159174088-c534adea-8e30-4bc2-8581-6b0dfc66511c.PNG" width="600" height="700"/>
+
+
+### 출처 : <스프링 입문을 위한 자바 객체 지향의 원리와 이해>
+
