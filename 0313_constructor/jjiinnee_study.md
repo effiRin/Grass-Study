@@ -23,7 +23,97 @@ Class Bungeoppang(){
 }
 ```
 
+```java
+class BungeoppangTest(){
+   public static void main(String[] args){
+      Bungeoppang bung = new Bungeoppang();   //인스턴스 생성(Bungeoppang 클래스 참조하기 위해 선언)
+      bung.name = "팥";                  //붕어빵 인스턴스의 속성 = 멤버변수의 값을 변경한다.
+      bung.make();                      //붕어빵 인스턴스의 메소드 = 기능을 호출한다.
+      
+   }
+}
+```
 
+연산자 new가 인스턴스를 생성하는 것이지 생성자가 인스턴스를 생성하는 것은 아니다!
+연산자 new를 하게 되면 메모리에 새롭게 공간이 생성된다.
+메인 클래스에서 new로 새롭게 메모리를 생성하였고 bung라는 변수명에 주소값이 복사되어 bung변수로 Bungeoppang이라는 클래스에 접근할 수 있게 된다.
+
+bung 참조변수가 Bungeoppang 인스턴스를 참조하고 있다.
+인스턴스=객체(클래스)는 참조변수를 통해서만 다룰 수 있으며, 참조변수의 타입은 인스턴스(객체,클래스)의 타입과 일치해야한다.
+
+# 클래스
+객체를 만들어 내기 위한 설계도 혹은 틀을 의미
+연관된 변수와 메서드의 집합
+
+# 객체(Object)
+소프트웨어 세계에 구현할 대상
+클래스에 선언된 모양 그대로 생성된 실체
+> 클래스의 인스턴스
+> 객체는 모든 인스턴스를 대표하는 포괄적인 의미를 갖는다.
+> oop의 관점에서 클래스의 타입으로 선언되었을 때 '객체'라고 부른다.
+
+# 인스턴스
+설계도를 바탕으로 소프트웨어 세계에 구현된 구체적인 실체
+실체화된 인스턴스는 메모리에 할당된다.
+인스턴스는 객체에 포함된다고 볼 수 있다.
+oop관점에서 객체가 메모리에 할당되어 실제 사용될 때 '인스턴스'라고 부른다.
+
+//객체와 인스턴스
+```java
+public class Main{
+  public static void main(String[] args){
+       Animal cat, dog;       // 객체
+       
+       //인스턴스 생성
+       cat = new Animal();
+       dog = new Animal();
+       //cat은 Animal 클래스의 '인스턴스' 객체를 메모리에 할당한다.
+  }
+}
+```
+
+# 인스턴스 변수
+클래스 영역에 선언
+인스턴스 변수의 값을 읽어오거나 저장하기 위해서 먼저 생성
+독립적인 공간을 가지므로 서로 다른 값 가질 수 있다
+인스턴스마다 고유값을 유지해야하는 속성의 경우 인스턴스로 선언한다.
+
+# 클래스 변수
+클래스 변수는 인스턴스 변수 앞에 static을 붙이면 된다.
+모든 인스턴스가 공통된 저장공간(변수)를 공유한다.
+클래스 변수 = 공유변수(한 클래스의 모든 인스턴스들이 공통적인 값 유지해야하는 속성일경우)
+
+```java
+class Card(){
+  String kind;
+  int number;
+  static int width =100;
+  static int height=250;
+}
+```
+
+```java
+class CardTest(){
+  public static void main(String[] args){
+    //static변수 = 클래스 변수는 객체생성하지 않아도
+    Card.width;      //이렇게 사용가능
+              
+              
+    Card c1 = new Card();
+    c1.kind = "Heart";
+    c1.number =7 ;
+    
+    Card c2 = new Card();
+    c2.kind = spade";
+    c2.number = 4;
+    
+    //new를 함으로써 c1,c2 각각의 메모리가 생성되었고
+    //각각의 주소값에 데이터를 넣었다. 
+    //Card 인스턴스인 c1,c2
+    //클래스 변수인 width, height를 공유하기 때문에 값이 같게 출력된다.
+  }
+}
+```
 
 # 생성자란???
 생성자는 인스턴스가 생성될 때 호출되는 '인스턴스 초기화 메서드'이다.
