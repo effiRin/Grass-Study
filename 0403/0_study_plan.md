@@ -12,7 +12,7 @@
 
 > jjiinneee : [Java Beans?](https://stackoverflow.com/questions/1612334/difference-between-dto-vo-pojo-javabeans)
 
-> effiRin : [1달 3주차?]
+> effiRin : 4월 수업 복습
 
 > GormWH : ()(Interface, Inheritance)(알고리즘)
 
