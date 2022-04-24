@@ -30,3 +30,21 @@
 [망나니 개발자 블로그 참고](https://mangkyu.tistory.com/181)  
 취업이 목표이기 떄문에 오늘 기출 유형
 
+ABCDE
+abcde
+01234
+FGHIJ
+fghij
+
+a[][] = ABCDE
+        abcd   <- a[1].length
+        01234222222222
+        FGHIJ
+        fghij
+
+a[0][0] = A
+a[1][0] = a
+a[2][0] = 0
+a[3][0] = F
+
+for (int i = 0; i < 5;)
